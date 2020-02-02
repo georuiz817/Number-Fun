@@ -16,12 +16,13 @@ function Main() {
         e.preventDefault();
         console.log({HumNum})
         console.log({CompNum})
-      
+   
         if (CompNum === parseInt(HumNum)){
             document.getElementById("yay").innerHTML = 'Yay!';
             document.getElementById("again").innerHTML ='<div><button onClick={location.reload()}>Play again?</button></div>';
         } else{
-          document.getElementById('yay').innerHTML = "wrong"
+          document.getElementById('yay').innerHTML = `<div><p> ${HumNum} is not the number</p></div>`
+         
           }
       } 
 

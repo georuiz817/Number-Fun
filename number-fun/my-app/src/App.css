@@ -33,4 +33,19 @@ span{
   text-align: center;
   }
 
+button {
+  background-color: transparent;
+  color: green;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 10px     10px      10px           10px;  
+  }
+  
 
+  input{
+    margin-right: 5px;
+  }
+
+  .MyClass{
+    color: red;
+  }

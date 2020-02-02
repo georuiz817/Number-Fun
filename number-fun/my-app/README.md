@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Simply created with React. Number Hooks is a number guessing game. The main goal of the project is to show/practice my ability to use hooks. Most importantly in this app useState and useEffect. Hooks is sitll less than a year old. However, I wanted to check out and see what it was all about. Unfortunatley, we didn't get to learn it during my time and Flatiron. I was one of the first cohorts to learn React and hooks was not impemented in the learning yet. It's something I believe will over time become the standard and would love implement into my older projects.
+Simply created with React. Number Hooks is a number guessing game. The main goal of the project is to show/practice my ability to use hooks. Most importantly in this app useState and useEffect. Hooks is sitll less than a year old. However, I wanted to check out and see what it was all about. Unfortunatley, we didn't get to learn it during my time and Flatiron. I was one of the first cohorts to learn React and hooks was not impemented in the learning yet. It's something I believe will over time become the standard and would love implement into my older projects. Have fun!
 
 Boiler plate instructions below but:
 #1 cd into my-app 

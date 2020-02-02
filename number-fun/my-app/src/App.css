@@ -14,12 +14,23 @@ body{
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
-ul{
-  text-align: left;
-  margin-top: -50px;
+span{
+  font-size: 12px;
 }
+
+#gameDesc{
+  text-align: left;
+  margin-top: -30px;
+}
+
+#gameModes li{
+  display: inline;
+  margin-right: 100px;
+  text-align: center;
+  }
 
 

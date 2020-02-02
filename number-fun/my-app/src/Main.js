@@ -8,7 +8,7 @@ function Main() {
     
   
     useEffect(() => {
-       UpdateCompNum(Math.floor(Math.random() * 100) + 1)
+       UpdateCompNum(Math.floor(Math.random() * 10) + 1)
        }, []);
 
   
@@ -26,28 +26,46 @@ function Main() {
           }
       } 
 
+   const EasyMode = (e) => {
+      UpdateCompNum(Math.floor(Math.random() * 10) + 1)
+   }
+
+   const NormalMode = (e) => {
+      UpdateCompNum(Math.floor(Math.random() * 50) + 1)
+     
+   }
+
+   const HardMode = (e) => {
+      UpdateCompNum(Math.floor(Math.random() * 100) + 1)
+   }
+
 
   
     return (
-    <div>
-      <h1>Number Hooks</h1>
-      <ul>
-        <li>Built with React</li>
-        <li>My first project using hooks</li>
-        <li>Two state objects. Your number and the computers randomly generated number from 1 - 100.</li>
-        <li>Try and get your number === the computers..</li>
-      </ul>
-      <p><u>Find the number</u></p>
-         <form onSubmit={handleSubmit}>
-            <input type="text" value={HumNum} name="name" onChange={(e) => UpdateHumNum( e.target.value)}/>
-            <button id="button" type="submit">Guess</button>
-         </form>
-         <br></br>
-         
-        <p id="yay"></p>
-        <p id="again"></p>
-       <p id="list"></p>
-    </div>
+<div>
+   <h1>Number Fun <span>(with hooks)</span></h1>
+   <ul id="gameDesc">
+      <li>Built with React</li>
+      <li>My first project using hooks</li>
+      <li>Two state objects. Your number and the computers randomly generated number.</li>
+      <li>Game is defaulted on easy mode</li>
+      <li>Try and get your number equal to the computers..</li>
+   </ul>
+   <ul id="gameModes">
+      <li><button id="easy" onClick={EasyMode}>Easy: 1-10</button></li>
+      <li><button id="normal" onClick={NormalMode}>Normal: 1-50</button></li>
+      <li><button id="hard" onClick={HardMode}>Hard: 1-100</button></li>
+   </ul>
+   <p><u>Find the number</u></p>
+   <form onSubmit={handleSubmit}>
+      <input type="text" value={HumNum} name="name" onChange={(e) => UpdateHumNum( e.target.value)}/>
+      <button id="button" type="submit">Guess</button>
+   </form>
+   <br></br>
+   <p id="yay"></p>
+   <p id="again"></p>
+   <p id="list"></p>
+</div>
   );
 }
 

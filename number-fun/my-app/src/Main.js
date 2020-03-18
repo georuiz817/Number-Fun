@@ -52,25 +52,26 @@ function Main() {
   
     return (
 <div>
+<div>
    
-   <h1>Number Fun <span>(with hooks)</span></h1>
+   <h1>Number Fun™</h1>
+   <br></br>
    <ul id="gameDesc">
       <li>Built with React</li>
-      <li>My first project using hooks</li>
-      <li>Two state objects. Your number and the computers randomly generated number.</li>
-      <li>Game is defaulted on easy mode</li>
+      <br></br>
       <li>Try and get your number equal to the computers..</li>
    </ul>
-  
-   <ul id="gameModes">
+
+     <ul id="gameModes">
       <li><button id="easy" onClick={EasyMode}>Easy: 1-10</button></li>
       <li><button id="normal" onClick={NormalMode}>Normal: 1-50</button></li>
       <li><button id="hard" onClick={HardMode}>Hard: 1-100</button></li>
    </ul>
    
-   <p><u>Find the number</u></p>
+   <p>Find the number</p>
+   <hr></hr>
    <form onSubmit={handleSubmit}>
-      <input type="text" value={HumNum} name="name" onChange={(e) => UpdateHumNum( e.target.value)}/>
+      <input type="number" value={HumNum} name="name" onChange={(e) => UpdateHumNum( e.target.value)}/>
       <button id="button" type="submit">Guess</button>
    </form>
    
@@ -78,6 +79,7 @@ function Main() {
    <p id="yay"></p>
    <p id="again"></p>
    <p id="list"></p>
+</div>
 </div>
   );
 }

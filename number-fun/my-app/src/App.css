@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
   margin: auto;
   width: 50%;
-  border: 10px solid green;
   padding: 10px;
   margin-top: 100px;
-  color: green;
+  color: #ffaf18;
 }
 
 body{
   background-color: black ;
-  font-family: 'Lucida Sans TypeWriter', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Press Start 2P', cursive;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
 }
 
 span{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #gameDesc{
@@ -35,10 +36,9 @@ span{
 
 button {
   background-color: transparent;
-  color: green;
+  color: orange;
   font-weight: 600;
   line-height: 1;
-  border-radius: 10px     10px      10px           10px;  
   }
   
 

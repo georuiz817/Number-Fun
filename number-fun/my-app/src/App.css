@@ -32,6 +32,11 @@ span{
   display: inline;
   margin-right: 100px;
   text-align: center;
+  margin-right: 20px;
+  }
+
+  #gameModes button{
+    height: 25px;
   }
 
 button {
@@ -39,6 +44,7 @@ button {
   color: orange;
   font-weight: 600;
   line-height: 1;
+  font-family: 'Press Start 2P', cursive;;
   }
   
 
